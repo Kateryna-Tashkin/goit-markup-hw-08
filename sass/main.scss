@@ -1,0 +1,20 @@
+//base
+@import "./base/common";
+@import "./base/container";
+//utils
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+//components
+@import "./components/logo";
+@import "./components/logo-footer";
+//layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/first-section";
+@import "./layout/second-section";
+@import "./layout/section-team";
+@import "./layout/section-clients";
+@import "./layout/footer";
+@import "./layout/portfolio-buttons";
+@import "./layout/portfolio-cards";
+@import "./layout/backdrop";

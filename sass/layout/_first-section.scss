@@ -1,0 +1,63 @@
+.section {
+  padding-top: 94px;
+  margin-bottom: 0px;
+}
+.benefits {
+  display: flex;
+}
+.list-box-first {
+  width: 270px;
+  & + & {
+    margin: 0px 0px 0px 30px;
+    padding: 0px;
+  }
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--bg-secondary);
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.list-item-svg1 {
+  &::before {
+    background-image: url(../image/svg1.svg);
+  }
+}
+.list-item-clock2 {
+  &::before {
+    background-image: url(../image/clock2.svg);
+  }
+}
+.list-item-diagram3 {
+  &::before {
+    background-image: url(../image/diagram3.svg);
+  }
+}
+.list-item-astronaut4 {
+  &::before {
+    background-image: url(../image/astronaut4.svg);
+  }
+}
+
+.section-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
+.section-text {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin: 0px;
+  padding: 0px;
+}
