@@ -1,55 +1,137 @@
 .hero {
-  background: var(--bg-hero);
-  text-align: center;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: var(--bg-hero);
   background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
-    url(../image/img-bg.jpg);
-  max-width: 1600px;
-  height: 600px;
-
+    url(../image/img-bg-mobile.jpg);
+  background-position: x 0px y 60px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: x 0px y 80px;
-  margin-right: auto;
-  margin-left: auto;
-
-  padding-top: 200px;
-  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-title {
   color: var(--secondary-accent-color);
-
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   margin-top: 0;
   margin-bottom: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
-
 .hero-button {
-  display: inline-block;
   color: var(--secondary-accent-color);
-  background: var(--accent-color);
-  border-radius: 4px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  min-width: 136px;
-  border: 1px solid transparent;
-  cursor: pointer;
-
-  font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 700;
+  line-height: 1.875;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 32px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: var(--shadow-button-hero);
+  border: 1px solid transparent;
+  cursor: pointer;
+  min-width: 136px;
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
+      url(../image/img-bg-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
+      url(../image/img-bg-tablet.jpg);
+    background-position: x 0px y 80px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
+      url(../image/img-bg-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
+      url(../image/img-bg-desktop.jpg);
+  }
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
+      url(../image/img-bg-desktop@2x.jpg);
+  }
+}
+
+//.hero {
+// background: var(--bg-hero);
+// text-align: center;
+
+// background-image: linear-gradient(to right, var(--shadow), var(--shadow)),
+// url(../image/img-bg.jpg);
+// max-width: 1600px;
+//height: 600px;
+
+//background-repeat: no-repeat;
+// background-size: cover;
+//background-position: x 0px y 80px;
+// margin-right: auto;
+//margin-left: auto;
+
+//padding-top: 200px;
+// padding-bottom: 200px;
+//}
+//.hero-title {
+// color: var(--secondary-accent-color);
+
+//font-weight: 900;
+//font-size: 44px;
+//line-height: 1.36;
+//text-align: center;
+//letter-spacing: 0.06em;
+//text-transform: uppercase;
+
+//margin-top: 0;
+//margin-bottom: 30px;
+//padding-left: 0px;
+//padding-right: 0px;
+//}
+
+//.hero-button {
+//display: inline-block;
+//color: var(--secondary-accent-color);
+// background: var(--accent-color);
+//border-radius: 4px;
+//padding-left: 32px;
+//padding-right: 32px;
+//padding-top: 10px;
+//padding-bottom: 10px;
+
+//min-width: 136px;
+//border: 1px solid transparent;
+// cursor: pointer;
+
+//font-family: inherit;
+//font-weight: 700;
+//  font-size: 16px;
+// line-height: 1.88;
+// text-align: center;
+// letter-spacing: 0.06em;
+//}

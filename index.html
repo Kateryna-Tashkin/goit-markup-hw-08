@@ -12,7 +12,7 @@
 
 <body class="body">
     <!--шапка сайта-->
-    <header class="page-header">
+   <!-- <header class="page-header">
         <div class="container main-nav">
         <nav class="main-nav">
             <a class="link-logo" href="./index.html"> <span class="logo-web">Web</span>Studio
@@ -41,7 +41,7 @@
             </li>
         </ul>
         </div>
-    </header>
+    </header>-->
     <main>
         <!--Герой-->
         <section class="hero">
@@ -104,7 +104,13 @@
             <div class="container">
             <h2 class="section-main-title secondary-margin">Наша команда</h2>
             <ul class="list team-boxes">
-                <li class="box team-items"> <img src="./image/img4.jpg" alt="фото Игоря Демьяненко" width="270">
+                <li class="box team-items"> 
+                    <picture class="picture">
+                        <source srcset="./image/team/team1-mobile.jpg 1x, ./image/team/team1-mobile@2x.jpg 2x" media="(min-width:320px)">
+                        <source srcset="./image/team/team1-tablet.jpg 1x, ./image/team/team1-tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./image/team/team1-desktop.jpg 1x, ./image/team/team1-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                    <img src="./image/img4.jpg" alt="фото Игоря Демьяненко">
+                    </picture>
                     <div class="team-list-content-wrapper">
                     <h4 class="team-name">Игорь Демьяненко</h4>
                     <p class="section-text-profession">Product Designer</p>
@@ -140,7 +146,13 @@
                     </ul>
                     </div>
                 </li>
-                <li class="box team-items"> <img src="./image/img5.jpg" alt="фото Ольги Репиной" width="270">
+                <li class="box team-items">
+                    <picture class="picture">
+                        <source srcset="./image/team/team2-mobile.jpg 1x, ./image/team/team2-mobile@2x.jpg 2x" media="(min-width:320px)">
+                        <source srcset="./image/team/team2-tablet.jpg 1x, ./image/team/team2-tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./image/team/team2-desktop.jpg 1x, ./image/team/team2-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                    <img src="./image/img5.jpg" alt="фото Ольги Репиной">
+                    </picture>
                     <div class="team-list-content-wrapper">
                     <h4 class="team-name">Ольга Репина</h4>
                     <p class="section-text-profession">Frontend Developer</p>
@@ -176,8 +188,13 @@
                     </ul>
                     </div>
                 </li>
-                <li class="box team-items"><img src="./image/img6.jpg" alt="фото Николая Тарасова" width="270">
-                    
+                <li class="box team-items">
+                    <picture class="picture">
+                        <source srcset="./image/team/team3-mobile.jpg 1x, ./image/team/team3-mobile@2x.jpg 2x" media="(min-width:320px)">
+                        <source srcset="./image/team/team3-tablet.jpg 1x, ./image/team/team3-tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./image/team/team3-desktop.jpg 1x, ./image/team/team3-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                    <img src="./image/img6.jpg" alt="фото Николая Тарасова">
+                    </picture>
                     <div class="team-list-content-wrapper">
                     <h4 class="team-name">Николай Тарасов</h4>
                     <p class="section-text-profession">Marketing</p>
@@ -213,7 +230,13 @@
                     </ul>
                     </div>
                 </li>
-                <li class="box team-items"><img src="./image/img7.jpg" alt="фото Михаила Ермакова" width="270">
+                <li class="box team-items">
+                    <picture class="picture">
+                        <source srcset="./image/team/team4-mobile.jpg 1x, ./image/team/team4-mobile@2x.jpg 2x" media="(min-width:320px)">
+                        <source srcset="./image/team/team4-tablet.jpg 1x, ./image/team/team4-tablet@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./image/team/team4-desktop.jpg 1x, ./image/team/team4-desktop@2x.jpg 2x" media="(min-width:1200px)">
+                    <img src="./image/img7.jpg" alt="фото Михаила Ермакова">
+                    </picture>
                     <div class="team-list-content-wrapper">
                     <h4 class="team-name">Михаил Ермаков</h4>
                     <p class="section-text-profession">UI Designer</p>
@@ -252,6 +275,7 @@
             </ul>
             </div>
         </section>
+        <!--Секция клиенты-->
         <section class="section-clients">
             <div class="container">
                 <h2 class="section-main-title third-margin">Постоянные клиенты</h2>
@@ -303,7 +327,7 @@
         </section>
     </main>
     <!--Футер-->
-    <footer class="page-footer">
+   <!-- <footer class="page-footer">
         <div class=" container all-footer-container">
         <div class="box-adress-main">
         <a class="logo-footer" href="./index.html">
@@ -365,11 +389,11 @@
             </form>
         </div>
         </div>
-    </footer>
+    </footer>-->
 
     <!-- my backdrop-->
 
-    <div class="backdrop is-hidden" data-modal>
+   <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-button-close" data-modal-close >
                 <svg class="modal-button-svg" width="11" height="11">
@@ -415,7 +439,7 @@
             </form>
         
         </div>
-    </div>
+    </div>-->
     <script src="./js/modal.js"></script>
 </body>
 
