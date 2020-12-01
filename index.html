@@ -14,12 +14,18 @@
     <!--шапка сайта-->
     <header class="page-header">
         <div class="container main-nav">
-        <nav class="main-nav">
             <a class="link-logo" href="./index.html"> <span class="logo-web">Web</span>Studio
             </a>
+            <button class="menu-button" type="button" data-menu-button>
+                <svg width="24" height="19" aria-label="переключатель мобильного меню">
+                    <use class="icon-cross" href="./image/sprite.svg#icon-close-24"></use>
+                    <use class="icon-menu" href="./image/sprite.svg#icon-menu-24"></use>
+                </svg>
+            </button>
+            <div class="wraper-for-menu-nav" data-menu> 
+        <nav class="main-navigation">
             
-
-            <ul class="site-nav list">
+        <ul class="site-nav list">
                 <li class="navigation-list"> <a href="./index.html" class="current links-transition menu-link">Студия</a></li>
                 <li class="navigation-list"> <a href="./portfolio.html" class="links-transition menu-link">Портфолио</a></li>
                 <li class="navigation-list"> <a href="" class="links-transition menu-link">Контакты</a></li>
@@ -41,6 +47,7 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+        </div>
         </div>
     </header>
     <main>
@@ -394,7 +401,7 @@
 
     <!-- my backdrop-->
 
-   <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-button-close" data-modal-close >
                 <svg class="modal-button-svg" width="11" height="11">
@@ -440,8 +447,9 @@
             </form>
         
         </div>
-    </div>-->
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

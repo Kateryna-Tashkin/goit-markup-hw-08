@@ -1,13 +1,70 @@
 .page-header {
+  position: relative;
   text-decoration-color: none;
   background: var(--bg-header);
   border-bottom: 1px solid var(--border-bottom);
   margin: 0px;
   padding: 0px;
 }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-top: 22px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.menu-button.is-open .icon-menu {
+  display: none;
+}
+.wraper-for-menu-nav {
+  &.is-open {
+    display: block;
+  }
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    min-height: 450px;
+    background-color: #ffffff;
+    align-items: center;
+    border: 1px solid #ececec;
+  }
+}
+
 .main-nav {
   display: flex;
-  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.main-navigation {
+  justify-content: center;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .site-nav a {
   color: var(--primary-text-color);
@@ -16,13 +73,23 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .navigation-list {
-  margin-right: 50px;
-  padding: 0px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+    padding: 0px;
+  }
   &:last-child {
     margin-right: 0px;
   }
@@ -42,7 +109,7 @@
     background-color: var(--accent-color);
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -20;
     opacity: 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -57,20 +124,33 @@
     color: var(--accent-color);
   }
 }
-.site-nav {
-  display: flex;
-  & a:hover,
-  & a:focus {
-    color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: inline-flex;
+  }
+  .wraper-for-menu-nav {
+    display: inline;
+  }
+
+  .site-nav {
+    display: flex;
+    & a:hover,
+    & a:focus {
+      color: var(--accent-color);
+    }
   }
 }
-
 .site-nav .current {
   color: var(--accent-color);
 }
-.auth-nav {
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+    margin-left: auto;
+  }
+  .auth-nav .list-contacts + & {
+    margin-left: 50px;
+  }
 }
 .auth-nav-svg {
   fill: var(--logo-color);
@@ -90,11 +170,21 @@
   &:focus {
     fill: var(--accent-color);
   }
-  .auth-nav .list-contacts + & {
-    margin-left: 50px;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    justify-content: center;
+    &:last-child {
+      margin-top: 16px;
+    }
+    &:first-child {
+      margin-top: 60px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .auth-nav .list-contacts + & {
+      margin-left: 50px;
+    }
   }
 }
-
 .auth-nav a {
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -103,9 +193,11 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   &:hover,
   &:focus {
     color: var(--accent-color);
