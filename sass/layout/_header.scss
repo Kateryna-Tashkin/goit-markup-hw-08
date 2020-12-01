@@ -7,7 +7,7 @@
   padding: 0px;
 }
 .menu-button {
-  display: inline-flex;
+  display: flex;
   margin: 0;
   padding: 0;
   border: none;
@@ -135,7 +135,7 @@
     display: flex;
   }
   .wraper-for-menu-nav {
-    display: inline;
+    display: flex;
   }
 
   .site-nav {
@@ -209,5 +209,16 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .wraper-for-menu-nav {
+    display: flex;
+  }
+}
+.icon-cross {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
   }
 }
