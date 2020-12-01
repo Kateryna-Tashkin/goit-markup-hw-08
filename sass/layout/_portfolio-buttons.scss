@@ -9,7 +9,6 @@
   padding-top: 60px;
   padding-bottom: 40px;
 }
-
 .switch-button {
   background: var(--bg-secondary);
   border-radius: 4px;
@@ -29,16 +28,27 @@
     color: var(--secondary-accent-color);
   }
 }
-.list-our-button {
-  & + & {
-    margin-left: 8px;
+@media screen and (max-width: 479px) {
+  .list-our-button {
+    margin-bottom: 15px;
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-left: 8px;
+    }
   }
-  &:nth-child(4) {
-    margin-left: 0;
-  }
-  &:nth-child(4),
-  &:nth-child(5) {
-    margin-top: 21px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .list-our-button {
+    & + & {
+      margin-left: 8px;
+    }
+    &:nth-child(4) {
+      margin-left: 0;
+    }
+    &:nth-child(4),
+    &:nth-child(5) {
+      margin-top: 21px;
+    }
   }
 }
 @media screen and (min-width: 768px) {

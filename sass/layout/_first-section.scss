@@ -20,7 +20,7 @@
   padding: 0px;
 }
 .list-box-first {
-  width: 450px;
+  max-width: 450px;
   &::before {
     content: "";
     display: block;

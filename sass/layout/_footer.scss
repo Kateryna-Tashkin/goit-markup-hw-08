@@ -113,7 +113,7 @@
   border: 1px solid transparent;
   padding: 10px 62px 10px 29px;
   margin-top: 20px;
-  margin-left: 130px;
+  //margin-left: 130px;
 }
 .mail-input-wraper {
   display: flex;
@@ -134,6 +134,11 @@
 .my-send-icon {
   width: 24px;
   height: 24px;
+}
+@media screen and (min-width: 480px) {
+  .btn-for-mailing {
+    margin-left: 130px;
+  }
 }
 @media screen and (min-width: 768px) {
   .text-footer {

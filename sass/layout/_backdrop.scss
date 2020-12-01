@@ -12,12 +12,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 609px;
   background: var(--secondary-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200 px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-button-close {
   position: absolute;
@@ -136,8 +143,8 @@
   margin-bottom: 30px;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   &::before {
@@ -146,7 +153,7 @@
     width: 16px;
     height: 15px;
     border-radius: 2px;
-    margin-right: 7px;
+    margin-right: 8px;
     background-image: url(../image/square.svg);
     .modal-form-policy:checked + & {
       background-color: var(--accent-color);
@@ -156,7 +163,12 @@
     }
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .contact-form-policy-label {
+    font-size: 12px;
+    line-height: 1.71;
+  }
+}
 .agreement-condition {
   display: flex;
   color: var(--accent-color);
