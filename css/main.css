@@ -209,6 +209,7 @@ input {
   .wraper-for-menu-nav {
     display: none;
     position: absolute;
+    z-index: 4;
     top: 100%;
     left: 0%;
     width: 100%;
@@ -839,9 +840,14 @@ input {
 }
 
 .team-list-content-wrapper {
-  padding-left: 122px;
-  padding-right: 122px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 480px) and (max-width) {
+  .team-list-content-wrapper {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
 }
 
 @media screen and (min-width: 768px) {
