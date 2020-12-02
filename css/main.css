@@ -17,7 +17,7 @@ html {
   padding: 0;
 }
 
-img {
+.img {
   display: block;
   width: 100%;
 }
@@ -884,6 +884,12 @@ input {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .team-items {
+    width: 100%;
   }
 }
 
