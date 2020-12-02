@@ -17,7 +17,7 @@ html {
   padding: 0;
 }
 
-.img {
+img {
   display: block;
   width: 100%;
 }
@@ -737,6 +737,15 @@ input {
   color: var(--secondary-accent-color);
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .team-items {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
 .section-team {
   background: var(--bg-secondary);
   margin: 0px;
@@ -884,12 +893,6 @@ input {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  .team-items {
-    width: 100%;
   }
 }
 
