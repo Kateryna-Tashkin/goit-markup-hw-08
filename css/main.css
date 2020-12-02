@@ -561,6 +561,8 @@ input {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--shadow)), to(var(--shadow))), url(../image/img-bg-desktop.jpg);
     background-image: linear-gradient(to right, var(--shadow), var(--shadow)), url(../image/img-bg-desktop.jpg);
   }
@@ -743,6 +745,10 @@ input {
   }
   .box {
     width: 100%;
+  }
+  .team-list-content-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -976,7 +982,25 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 15px;
+    max-width: 208px;
+  }
+  .box.clients-margin {
+    margin-bottom: 30px;
+  }
+  .box.clients-margin:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-margin {
+    margin-left: 30px;
+  }
+  .clients-margin:nth-child(1), .clients-margin:nth-child(4) {
+    margin-left: 0px;
+  }
+  .clients-margin:nth-child(3), .clients-margin:nth-child(4), .clients-margin:nth-child(5), .clients-margin:nth-child(6) {
+    margin-top: 30px;
   }
 }
 
@@ -985,18 +1009,9 @@ input {
     width: 226px;
     height: 90px;
   }
-}
-
-.clients-margin {
-  margin-left: 30px;
-}
-
-.clients-margin:nth-child(1), .clients-margin:nth-child(4) {
-  margin-left: 0px;
-}
-
-.clients-margin:nth-child(4), .clients-margin:nth-child(5), .clients-margin:nth-child(6) {
-  margin-top: 30px;
+  .clients-margin:nth-child(4), .clients-margin:nth-child(5), .clients-margin:nth-child(6) {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1249,7 +1264,7 @@ input {
     margin: 0;
   }
   .box-social-link {
-    margin-left: 50px;
+    margin-left: 30px;
     padding-top: 10px;
     margin-bottom: 80px;
   }
@@ -1277,7 +1292,7 @@ input {
     padding-bottom: 60px;
   }
   .box-mailing {
-    margin-left: 93px;
+    margin-left: 53px;
     margin-bottom: 60px;
   }
   .mailing-btn-wraper {
